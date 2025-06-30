@@ -3,6 +3,13 @@
 ##
 ## Server
 server:
+## ArgoCD rbac config
+  ## reference https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/rbac.md
+  rbacConfig:
+    policy.csv: |
+      g, Cloud, role:admin
+    scopes: '[email,groups]'
+
   ## ArgoCD config
   ## reference https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/argocd-cm.yaml
   configEnabled: true
