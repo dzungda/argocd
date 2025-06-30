@@ -8,6 +8,7 @@ server:
   rbacConfig:
     policy.csv: |
       g, Cloud, role:admin
+      g, Viewer, role:readonly
     scopes: '[email,groups]'
 
   ## ArgoCD config
