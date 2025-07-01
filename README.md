@@ -17,7 +17,7 @@ This project aims to install a self-managed Argo CD using the App of App pattern
 # Clone Repository
 Clone kurtburak/argocd repository to your local device.
 ```
-git clone https://github.com/kurtburak/argocd.git
+git clone https://github.com/dzungda/argocd.git
 ```
 # Create Local Kubernetes Cluster
 Intall kind.
