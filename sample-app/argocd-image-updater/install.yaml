@@ -254,10 +254,6 @@ spec:
           name: ssh-signing-key
           readOnly: true
           subPath: sshPrivateKey
-        - name: git-ssh
-          mountPath: /app/config/ssh/sshPrivateKey
-          subPath: sshPrivateKey
-          readOnly: true
       serviceAccountName: argocd-image-updater
       volumes:
       - configMap:
@@ -281,8 +277,5 @@ spec:
         secret:
           optional: true
           secretName: ssh-git-creds
-      - name: git-ssh
-        secret:
-          secretName: git-ssh-creds
       - emptyDir: {}
         name: tmp
