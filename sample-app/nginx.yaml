@@ -6,14 +6,18 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: dungda7/app-demo
     argocd-image-updater.argoproj.io/write-back-method: git
-spec:  
+spec:
+  destination:  
+    server: https://kubernetes.default.svc  
+    namespace: sample-app 
   project: sample-project
   source:  
     repoURL: https://github.com/dzungda/argocd.git 
     path: deployment/nginx
     targetRevision: HEAD 
-  destination:  
-    server: https://kubernetes.default.svc  
-    namespace: sample-app 
-  syncPolicy:  
-    automated: {} 
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
