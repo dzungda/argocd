@@ -34,8 +34,8 @@ server:
           emailAttr: email
           groupsAttr: group
     repositories: |
-      - type: git
-        url: https://github.com/dzungda/argocd.git
+      #- type: git
+      #  url: https://github.com/dzungda/argocd.git
       - name: argo-helm
         type: helm
         url: https://argoproj.github.io/argo-helm
