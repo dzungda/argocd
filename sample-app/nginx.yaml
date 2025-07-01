@@ -3,6 +3,9 @@ kind: Application
 metadata:  
   name: nginx  
   namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: dungda7/app-demo
+    argocd-image-updater.argoproj.io/write-back-method: git
 spec:  
   project: sample-project
   source:  
