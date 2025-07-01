@@ -8,13 +8,10 @@ spec:
     namespace: sample-app
     server: https://kubernetes.default.svc
   project: sample-project
-  sources:
-    - repoURL: https://github.com/dzungda/argocd.git
-      path: sample-app/bookinfo
-      targetRevision: HEAD
-    - repoURL: https://github.com/dzungda/argocd.git
-      path: sample-app/nginx
-      targetRevision: HEAD
+  source:
+    repoURL: https://github.com/dzungda/argocd.git
+    path: sample-app/
+    targetRevision: HEAD
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
