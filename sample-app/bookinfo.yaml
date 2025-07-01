@@ -7,7 +7,8 @@ spec:
   destination:
     namespace: sample-app
     server: https://kubernetes.default.svc
-  project: sample-project
+  project: default
+  #sample-project
   source:
     path: deployment/bookinfo
     repoURL: https://github.com/dzungda/argocd.git
