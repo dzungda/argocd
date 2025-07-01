@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: sample-project
   source:
-    repoURL: https://github.com/dzungda/argocd.git
+    repoURL: git@github.com:dzungda/argocd.git
     path: sample-app/argocd-image-updater
     targetRevision: HEAD
   syncPolicy:
