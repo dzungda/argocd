@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: dungda7/app-demo
-  tag: v1.0
+  tag: v1.1
   pullPolicy: IfNotPresent
 
 service:
