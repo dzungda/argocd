@@ -39,6 +39,15 @@ server:
       - name: argo-helm
         type: helm
         url: https://argoproj.github.io/argo-helm
+      - enableLfs: true	
+        insecure: true	
+        insecureIgnoreHostKey: true	
+        name: git2	
+        sshPrivateKeySecret:	
+          key: sshPrivateKey	
+          name: repo-249271483	
+        type: git	
+        url: git@github.com:dzungda/argocd.git
   additionalApplications: 
     - name: argocd
       namespace: argocd
