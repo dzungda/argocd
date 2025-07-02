@@ -164,6 +164,9 @@ kubectl -n argocd port-forward service/argocd-server 8080:80
 
 Browse http://localhost:8080 and login with initial admin password.
 
+# Kind dont support access from external IP so we need to run forward port using socat
+$ sudo socat TCP-LISTEN:8081,bind=0.0.0.0,fork TCP:127.0.0.1:8080
+
 # Demo With Sample Application
 Create an application project definition file called *sample-project*.
 ```
