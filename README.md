@@ -1,21 +1,6 @@
 # Self Managed Argo CD - App of Everything
 
-**Table of Contents**
-
-- [Introduction](#introduction)
-- [Clone Repository](#clone-repository)
-- [Create Local Kubernetes Cluster](#create-local-kubernetes-cluster)
-- [Git Repository Hierarchy](#git-repository-hierarchy)
-- [Create App Of Everything Pattern](#create-app-of-everything-pattern)
-- [Intall Argo CD Using Helm](#intall-argo-cd-using-helm)
-- [Demo With Sample Application](#demo-with-sample-application)
-- [Cleanup](#cleanup)
-
-# Introduction
-This project aims to install a self-managed Argo CD using the App of App pattern. Full instructions and explanation can be found in the Medium article [Self Managed Argo CD — App Of Everything](https://medium.com/devopsturkiye/self-managed-argo-cd-app-of-everything-a226eb100cf0).
-
 # Clone Repository
-Clone kurtburak/argocd repository to your local device.
 ```
 git clone https://github.com/dzungda/argocd.git
 ```
