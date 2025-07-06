@@ -1,0 +1,8 @@
+helm:
+  parameters:
+  - name: image.name
+    value: dungda7/app01
+    forcestring: true
+  - name: image.tag
+    value: 2697d
+    forcestring: true
