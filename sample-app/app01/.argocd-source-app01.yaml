@@ -4,5 +4,5 @@ helm:
     value: dungda7/app01
     forcestring: true
   - name: image.tag
-    value: 2697d
+    value: 409c8
     forcestring: true
