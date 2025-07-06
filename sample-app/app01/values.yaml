@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: dungda7/app01
+  tag: 0faa3
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+
+resources: {}
