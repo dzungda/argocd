@@ -6,6 +6,9 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: dungda7/app01
     argocd-image-updater.argoproj.io/write-back-method: git
+    argocd-image-updater.argoproj.io/update-strategy: latest
+    argocd-image-updater.argoproj.io/dungda7.app01.value: image.tag
+    argocd-image-updater.argoproj.io/dungda7.app01.git-branch: main
 spec:
   destination:
     namespace: sample-app
