@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app01
+  namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: dungda7/app01
+    argocd-image-updater.argoproj.io/write-back-method: git
+spec:
+  destination:
+    namespace: sample-app
+    server: https://kubernetes.default.svc
+  project: sample-project
+  source:
+    repoURL: git@github.com:dzungda/argocd.git
+    path: sample-app/app01
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
