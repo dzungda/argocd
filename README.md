@@ -5,10 +5,7 @@
 git clone https://github.com/dzungda/argocd.git
 ```
 # Create Local Kubernetes Cluster
-Intall kind.
-```
-brew install kind
-```
+Intall kind
 
 Create local Kubernetes Cluster using kind
 ```
